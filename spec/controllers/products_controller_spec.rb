@@ -5,7 +5,7 @@ RSpec.describe ProductsController, type: :controller do
     Product.destroy_all
     @product_attributes = {name: "Test", price: "3.99", inventory: 12, description: "This is a great thing"}
   end
-
+=begin
   describe "POST create" do
 
     it 'creates a new product' do
@@ -46,5 +46,5 @@ RSpec.describe ProductsController, type: :controller do
       expect(body["created_at"]).to eq nil
     end
   end
-
+=end
 end
